@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contest" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminLogInController">
+   <children>
+      <ImageView fitHeight="413.0" fitWidth="465.0" layoutX="36.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/admin.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="558.0" layoutY="115.0" text="Email or User Name" />
+      <TextField fx:id="txtUserName" layoutX="558.0" layoutY="144.0" prefHeight="26.0" prefWidth="261.0" promptText="blueocean@gmail.com" />
+      <Label layoutX="558.0" layoutY="192.0" text="Password" />
+      <TextField fx:id="txtPassword" layoutX="558.0" layoutY="210.0" prefHeight="26.0" prefWidth="261.0" promptText="********" />
+      <Button fx:id="btnLogin" layoutX="561.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnLoginClickOnAction" prefHeight="30.0" prefWidth="255.0" text="Login" />
+      <Label layoutX="522.0" layoutY="43.0" text="Login As Admin">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="509.0" layoutY="12.0" orientation="VERTICAL" prefHeight="577.0" prefWidth="0.0" />
+      <Label layoutX="721.0" layoutY="248.0" onMouseClicked="#lblForgetPasswordClickOnAction" text="Forget password?">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="DARKEN" fitHeight="48.0" fitWidth="200.0" layoutX="14.0" layoutY="28.0">
+         <image>
+            <Image url="@asserts/logo-name.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="773.0" layoutY="556.0" mnemonicParsing="false" onAction="#btnBacktoMenuClickOnAction" text="Back to Main" />
+      <Label layoutX="333.0" layoutY="578.0" styleClass="small" text="Copyright © 2022 GDSE. All Rights Reserved. Version 1.0.0.">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

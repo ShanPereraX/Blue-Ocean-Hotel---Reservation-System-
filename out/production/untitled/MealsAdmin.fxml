@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="573.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MealsAdminController">
+   <children>
+      <AnchorPane fx:id="mealPackagesAdminContext" layoutX="10.0" layoutY="10.0" prefHeight="466.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="32.0" layoutY="343.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" />
+            <TableView fx:id="mealTableAdmin" layoutX="71.0" layoutY="190.0" prefHeight="276.0" prefWidth="481.0">
+               <columns>
+                  <TableColumn fx:id="colMealType" prefWidth="105.0" text="Meal Type" />
+                  <TableColumn fx:id="colMeal" prefWidth="226.0" text="Meal" />
+                  <TableColumn fx:id="colMealPrice" prefWidth="149.0" text="Price (Rs : )" />
+               </columns>
+            </TableView>
+            <Text layoutX="218.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal Packages" wrappingWidth="198.99999757111073">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal Type : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="mealTypeChoiceBox" layoutX="148.0" layoutY="83.0" prefHeight="25.0" prefWidth="142.0" />
+            <Text layoutX="57.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meal : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="mealChoiceBox" layoutX="150.0" layoutY="136.0" prefHeight="25.0" prefWidth="142.0" />
+            <Text layoutX="317.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price (Rs : ) : ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="insertMealPrice" layoutX="410.0" layoutY="83.0" prefHeight="25.0" prefWidth="142.0" />
+            <Button layoutX="324.0" layoutY="136.0" mnemonicParsing="false" onAction="#addMealOnAction" prefHeight="29.0" prefWidth="60.0" style="-fx-background-color: #3498db;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="403.0" layoutY="136.0" mnemonicParsing="false" onAction="#modifyMealOnAction" prefHeight="29.0" prefWidth="60.0" style="-fx-background-color: #2ecc71;" text="Modify" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="481.0" layoutY="136.0" mnemonicParsing="false" onAction="#deleteMealOnAction" prefHeight="29.0" prefWidth="60.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="52.0" layoutY="517.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #e74c3c;" text="Back" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

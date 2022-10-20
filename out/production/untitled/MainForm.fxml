@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contest" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="-6.0" layoutY="7.0" opacity="0.06" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/large-pool-with-umbrellas-hammocks.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" layoutY="198.0" text="Blue Ocean Hotel">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="60.0" />
+         </font></Label>
+      <RadioButton fx:id="rBtnAdmin" layoutX="451.0" layoutY="462.0" mnemonicParsing="false" text="Admin">
+         <toggleGroup>
+            <ToggleGroup fx:id="one" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rBtnRecep" layoutX="347.0" layoutY="462.0" mnemonicParsing="false" text="Reception" toggleGroup="$one" />
+      <Button fx:id="btnStart" contentDisplay="CENTER" defaultButton="true" layoutX="381.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnStartClickOnAction" text="Click to Start">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView blendMode="DARKEN" layoutX="374.0" layoutY="14.0">
+         <image>
+            <Image url="@asserts/logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="48.0" fitWidth="200.0" layoutX="344.0" layoutY="150.0">
+         <image>
+            <Image url="@asserts/logo-name.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="269.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/cutlery.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="347.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/hotel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="35.0" layoutX="509.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/service.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="599.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/family.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="35.0" layoutX="432.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@asserts/check-in.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="153.0" layoutY="426.0" text="Welcome to Blue Ocean Hotel - Reservation System, please select user type to continue" />
+      <Label layoutX="323.0" layoutY="568.0" styleClass="small" text="Copyright © 2022 GDSE. All Rights Reserved. Version 1.0.0.">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

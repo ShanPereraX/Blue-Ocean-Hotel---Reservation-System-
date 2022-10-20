@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="payDetailsContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PayDetailsController">
+   <children>
+      <Button layoutX="41.0" layoutY="349.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #e74c3c;" text="Back" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="458.0" layoutY="345.0" mnemonicParsing="false" onAction="#payOnAction" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #2980b9;" text="Pay" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="116.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Charge     : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="302.0" layoutY="83.0" text="4800.00" />
+      <Text layoutX="116.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID     : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="301.0" layoutY="117.0" />
+      <Text layoutX="115.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Card No : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="301.0" layoutY="151.0" />
+      <Text layoutX="117.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV No             : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="300.0" layoutY="186.0" />
+      <Text layoutX="117.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name On Card : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="301.0" layoutY="221.0" />
+      <Text layoutX="117.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration         : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="302.0" layoutY="256.0" />
+   </children>
+</AnchorPane>
